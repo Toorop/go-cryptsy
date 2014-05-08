@@ -7,7 +7,7 @@ import (
 type client struct {
 	pubKey  string
 	privKey string
-	*http.Client
+	http.Client
 }
 
 func NewClient(pubKey, privKey string) (c *client) {
